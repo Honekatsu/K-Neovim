@@ -1,4 +1,4 @@
-# Reyokatsu's Neovim Configs
+# ReyoKatsu's Neovim Configs
 
 macOS/Linux
 ```Zsh
