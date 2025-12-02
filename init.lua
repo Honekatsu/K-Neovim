@@ -3,14 +3,17 @@ vim.opt.clipboard = "unnamed"           -- SSHでコピペがサーバ側クリ�
 vim.opt.compatible = false              -- vi互換モードを使わない
 vim.opt.cursorline = true               -- カーソル行をハイライト
 vim.opt.mouse = ""                      -- マウス操作無効化
+vim.opt.tabstop = 2                     -- TABを2スペースとして表示
 vim.opt.expandtab = true                -- TABキーでスペース挿入
 vim.opt.softtabstop = 2                 -- TABキーで2スペース
+vim.opt.shiftwidth = 2                  -- 自動インデントで2スペース
 vim.opt.autoindent = true               -- 改行時の自動インデント
 vim.opt.virtualedit = "onemore"         -- 行末より先にカーソルを置ける
 vim.opt.ignorecase = true               -- 検索で大文字小文字を無視
 vim.opt.smartcase = true                -- 大文字を含む検索では区別
 vim.opt.incsearch = true                -- インクリメンタルサーチ
 vim.opt.foldenable = false              -- 折りたたみ無効化
+vim.opt.swapfile = false                -- スワップファイルを作成しない
 
 -- 表示関連
 vim.opt.number = true                   -- 行番号表示
@@ -21,6 +24,7 @@ vim.opt.wildmenu = true                 -- コマンドライン補完の候補�
 
 -- カラースキーム
 vim.cmd("colorscheme pablo")
+vim.opt.termguicolors = true          -- 24bitカラーを有効化
 
 -- 背景透過
 vim.cmd([[
