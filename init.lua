@@ -45,6 +45,9 @@ vim.g.cim_markdown_new_list_item_indent = 1
 -- プラグインの設定
 require("config.lazy")
 
+-- LSPの設定
+require('config.lsp')
+
 -- ファイルタイプの設定
 require("config.filetype")
 
