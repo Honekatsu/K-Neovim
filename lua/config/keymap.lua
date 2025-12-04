@@ -1,6 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("i", "{", "{}<Left>")
-vim.keymap.set("i", "(", "()<Left>")
 
 -- Window navigation
 vim.keymap.set('n', '<S-h>', '<C-w>h', { desc = 'Go to left window' })  -- 左のウィンドウへ移動
