@@ -12,7 +12,7 @@ return {
     },
     signcolumn = true,
     numhl      = true,  -- 行番号をハイライト
-    linehl     = true,  -- 行全体をハイライト
+    -- linehl     = true,  -- 行全体をハイライト
     on_attach = function(bufnr)
       local set_hl = vim.api.nvim_set_hl
       local ns = 0 -- global namespace
@@ -28,9 +28,9 @@ return {
       set_hl(ns, "GitSignsDeleteNr", { fg = "#f85149" })
 
       -- 行全体 (linehl)
-      set_hl(ns, "GitSignsAddLn",    { bg = "#163e29" }) -- 濃い緑
-      set_hl(ns, "GitSignsChangeLn", { bg = "#2b2b1b" }) -- 渋めの黄/茶
-      set_hl(ns, "GitSignsDeleteLn", { bg = "#2b1b1b" }) -- 暗めの赤
+      -- set_hl(ns, "GitSignsAddLn",    { bg = "#163e29" }) -- 濃い緑
+      -- set_hl(ns, "GitSignsChangeLn", { bg = "#2b2b1b" }) -- 渋めの黄/茶
+      -- set_hl(ns, "GitSignsDeleteLn", { bg = "#2b1b1b" }) -- 暗めの赤
     end,
 
     -- === 行の更新者表示 ===
