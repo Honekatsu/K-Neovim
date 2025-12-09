@@ -53,3 +53,4 @@ require("config.filetype")
 
 -- キーマップ
 require("config.keymap")
+
