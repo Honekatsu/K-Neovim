@@ -21,6 +21,8 @@ vim.cmd("syntax on")                    -- シンタックスハイライト
 vim.opt.hlsearch = true                 -- 検索結果のハイライト
 vim.opt.laststatus = 2                  -- 常時ステータスバー表示
 vim.opt.wildmenu = true                 -- コマンドライン補完の候補表示
+vim.opt.listchars = { trail = "."}      -- 制御文字と空白文字の可視化
+vim.opt.list = true                     -- 制御文字と空白文字の可視化有効化
 
 -- カラースキーム
 vim.cmd("colorscheme pablo")
