@@ -1,17 +1,17 @@
 local ft = require('Comment.ft')
 
--- 1. Using set function
-
+-- Custom filetypes
 ft
  -- Set only line comment
  -- Or set both line and block commentstring
  .set('spin', {'//%s', '/*%s*/'})
 
--- 2. Metatable magic
-
+-- Standard filetypes
 ft.javascript = {'//%s', '/*%s*/'}
 ft.yaml = '#%s'
+ft.tex = '%%s'
+ft.plaintex = '%%s'
 
--- Multiple filetypes
+-- Apply the same comment style to multiple filetypes
 ft({'go', 'rust'}, ft.get('c'))
 ft({'toml', 'graphql'}, '#%s')
