@@ -10,6 +10,7 @@ ft
 ft.javascript = {'//%s', '/*%s*/'}
 ft.yaml = '#%s'
 ft.tex = '%%s'
+ft.plaintex = '%%s'
 
 -- Apply the same comment style to multiple filetypes
 ft({'go', 'rust'}, ft.get('c'))
